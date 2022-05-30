@@ -32,7 +32,6 @@ function Product() {
               </tr>
             </thead>
             <tbody>
-
               {
                 products.map((item, index) => {
                   return <tr key={index}>
@@ -47,7 +46,6 @@ function Product() {
                   </tr>
                 })
               }
-
             </tbody>
           </table>
         </div>
