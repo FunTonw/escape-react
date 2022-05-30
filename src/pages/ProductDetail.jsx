@@ -65,10 +65,10 @@ function ProductDetail() {
             <div className="card-header bg-white">
               <h5 className="card-title">產品圖片</h5>
             </div>
-            <div className="card-body">
+            <div className="card-body row">
               {
                 state?.imagesUrl?.map((item, index) => {
-                  return <img src={item} className="rounded mb-2 me-2" alt="" key={index} style={{width: 150}} />
+                  return <div className="rounded col-4 g-2 overflow-hidden" key={index} style={{height: 100,}}><img src={item} alt="" key={index} style={{maxWidth: 150}}/></div>
                 })
               }
             </div>
